@@ -1176,9 +1176,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    transform: translateY(20px);
+    -webkit-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px);
   }
 
   100% {
@@ -1188,6 +1188,45 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     transform: translateY(0);
   }
 }
+
+@keyframes tpswing{
+	0% {
+    -webkit-transform: rotate(25deg);
+    -ms-transform:rotate(25deg);
+    transform: rotate(25deg);
+	}
+    100% { 
+      -webkit-transform: rotate(0deg);
+      -ms-transform:rotate(0deg);
+      transform: rotate(0deg);
+	}
+}
+
+@keyframes movingleftright1 {
+  0% {
+      -webkit-transform: translateX(0) translateY(0);
+      transform: translateX(0) translateY(0);
+  }
+
+  40% {
+      -webkit-transform: translateX(50px) translateY(-100px);
+      transform: translateX(50px) translateY(-100px);
+  }
+
+  75% {
+      -webkit-transform: translateX(200px);
+      transform: translateX(200px);
+  }
+
+  100% {
+      -webkit-transform: translateY(0) translateX(0);
+      transform: translateY(0) translateX(0);
+  }
+}
+
+
+
+
 
 .fadeInUp {
   -webkit-animation-name: fadeInUp;

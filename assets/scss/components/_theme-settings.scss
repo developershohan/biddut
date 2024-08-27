@@ -4,7 +4,7 @@
 /*  2.2 Theme Settings
 /*----------------------------------------*/
 
-.#{$theme-prefix}-theme{
+.#{$theme-prifix}-theme{
     $self : &;
     &-settings{
         &-area{
@@ -250,7 +250,7 @@
                 visibility: hidden;
             }
 
-            &.#{$theme-prefix}-color-settings-btn{
+            &.#{$theme-prifix}-color-settings-btn{
                             
                 &[data-color="#F50963"]{
                     background-color: #F50963;

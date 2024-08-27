@@ -3,168 +3,231 @@
 /*----------------------------------------*/
 /*  2.12 Accordion
 /*----------------------------------------*/
-
-.#{$theme-prefix}-accordion{
-    
-    & .accordion-item{
-        border: 0;
-        background: var(--tp-common-white);
-        border-radius: 0px 0px 5px 5px;
+.tp-custom-accordion {
+    & .accordion-items {
         margin-bottom: 20px;
-        &:first-of-type{
-            & .accordion-button{ }
-        }
-        &:last-of-type{
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-
-            & .accordion-button{
-                &.collapsed{ }
+        background-color: rgb(255, 255, 255);
+        box-shadow: 2px 3.464px 20px 0px rgba(16, 23, 40, 0.06);
+    }
+    & .accordion-buttons {
+        position: relative;
+        width: 100%;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: left;
+        padding: 21px 30px;
+        padding-left: 75px;    
+        transition: .3s;
+        color: var(--tp-common-black);
+        background-color: var(--tp-common-white);
+        @media #{$lg}{
+            font-size: 17px;
+        }  
+        @media #{$md}{
+            font-size: 16px;
+        }  
+        @media #{$xs}{
+            font-size: 15px;
+            padding: 21px 20px;
+            padding-left: 63px; 
+        }  
+        @media #{$sm}{
+            font-size: 14px;
+        }  
+        &:hover {
+            background-color: var(--tp-theme-1);
+            color: var(--tp-common-white);
+            &::after{
+                background-color: var(--tp-common-white);
+                color: var(--tp-common-black);
             }
         }
+        &::after {
+            position: absolute;
+            content: "\f068";
+            font-family: 'Font Awesome 5 Pro';
+            top: 19px;
+            left: 30px;
+            font-weight: 700;
+            font-size: 12px;
+            opacity: 1;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: var(--tp-theme-1);
+            color: var(--tp-common-white);
+            transition: .3s;
+            @media #{$xs}{
+                left: 20px;
+            } 
+        }
+
+        &.collapsed {
+            &::after {
+                content: '\f067';
+            }
+        }
+        &:not(.collapsed){
+            border-bottom: 1px solid #ececed;
+            background-color: var(--tp-theme-1);
+            color: var(--tp-common-white);
+            &::after{
+                background-color: var(--tp-common-white);
+                color: var(--tp-theme-1);
+            }
+        }
+
+
     }
 
-    & .accordion-button {
-        color: var(--tp-heading-primary);
-        font-weight: 500;
-        font-size: 20px;
-        letter-spacing: -0.8px;
-        background: var(--tp-common-white);
-        border: 1px solid #E3E3E3;
-        border-radius: 5px;
-        padding-top: 22px;
-        padding-bottom: 22px;
-        padding-right: 65px;
-        @include transition();
+    & .collapsed {
+        position: relative;
+        z-index: 8;
+    }
 
-        &::after{
-            position: absolute;
-            content: "\f101";
-            font-family: var(--tp-ff-fontawesome);
-            top: 22%;
-            right: 21px;
-            @include transform(rotate(-90deg));
-            font-weight: 900;
+    & .accordion-body {
+        padding: 15px 30px;
+        padding-bottom: 25px;
+        padding-right: 50px;
+        position: relative;
+        z-index: 1;
+        font-weight: 400;
+        font-size:16px;
+        line-height:30px;
+        background-color: var(--tp-common-white);
+        @media #{$xl} {
+            font-size: 15px;
+        }
+        @media #{$lg}{
             font-size: 14px;
-            width: 41px;
-            height: 41px;
-            text-align: center;
-            line-height: 41px;
-            background: var(--tp-common-white);
-            border-radius: 50%;
-            color: var(--tp-heading-primary);
-            @include transition();
         }
-
-
-        &.has-plus-icon{
-            &::after{
-                display: none;
-            }
+        @media #{$md}{
+            font-size: 14px;
         }
-
-        /* plus icon css */
-        & .#{$theme-prefix}-accordion-plus{
+        @media #{$xs}{
+            padding: 15px 20px;
+            padding-bottom: 25px;
+            padding-right: 20px;
+            font-size: 14px;
+        }
+        @media #{$sm}{
+            font-size: 15px;
+        }
+    }
+}
+.tp-custom-accordion-2 {
+    & .accordion-items {
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--tp-common-black);
+    }
+    & .accordion-buttons {
+        position: relative;
+        width: 100%;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: left;
+        padding: 21px 30px;
+        padding-left: 30px;    
+        transition: .3s;
+        color: var(--tp-common-black);
+        @media #{$lg}{
+            font-size: 17px;
+        }  
+        @media #{$md}{
+            font-size: 16px;
+        }  
+        @media #{$xs}{
+            font-size: 15px;
+        }  
+        @media #{$sm}{
+            font-size: 17px;
+        }  
+        &::before {
+            content: '';
             position: absolute;
             top: 50%;
-            right: 0;
-            @include transform(translateY(-50%));
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            @extend %transition;
-
-            @include rtl{
-                right: auto;
-                left: 0;
-            }
-
-            &::after{
-                position: absolute;
-                content: '';
-                width: 100%;
-                height: 2px;
-                left: 0;
-                top: 50%;
-                @include transform(translateY(-50%));
-                background-color: #525258;
-                border-radius: 2px;
-                @extend %transition;
-
-                @include rtl{
-                    right: 0;
-                    left: auto;
-                }
-            }
-            &::before{
-                position: absolute;
-                content: "";
-                width: 2px;
-                height: 100%;
-                left: 50%;
-                top: 0;
-                background-color: #525258;
-                @include transform(translateX(-50%));
-                border-radius: 2px;
-                @extend %transition;
-
-                @include rtl{
-                    right: 50%;
-                    left: auto;
-                    @include transform(translateX(50%));
-                }
-            }
+            left:0;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            opacity: 1;
+            border-radius: 50%;
+            background-color: var(--tp-common-black);
+        }
+        &::after {
+            position: absolute;
+            content: "\f068";
+            font-family: 'Font Awesome 5 Pro';
+            top: 19px;
+            right:30px;
+            font-weight: 700;
+            font-size: 12px;
+            opacity: 1;
+            color: var(--tp-common-black);
+            transition: .3s;
+            @media #{$xs}{
+              right: 20px;
+            } 
         }
 
-        &.collapsed{ 
-            &::after{
-                width: 41px;
-                height: 41px;
-                text-align: center;
-                line-height: 41px;
-                background-image: var(--tp-gradient-primary);
-                border-radius: 50%;
-                @include transform(rotate(90deg));
-                color:  var(--tp-common-white);
+        &.collapsed {
+            &::after {
+                content: '\f067';
             }
         }
-
-        &:not(.collapsed){
-            background-image: var(--tp-gradient-primary);
-            border-radius: 5px;
-            color: var(--tp-common-white);
-            box-shadow: none;
-            border: none;
-            margin-bottom: 20px;
-
-            & .#{$theme-prefix}-accordion-plus{
-                &::before{
-                    @include transform(translateX(-50%) rotate(90deg));
-                    background-color: var(--tp-theme-primary);
-
-                    @include rtl{
-                        @include transform(translateX(50%) rotate(90deg));
-                    }
-                }
-                &::after{
-                    background-color: var(--tp-theme-primary);
-                }
-            }
-        }
-
-        &:focus{
-            box-shadow: none;
-            border: 0;
-        }
+       
     }
 
-    & .accordion-body{
-        padding: 0 52px 2px 20px;
-        @media #{$xs} {
-            padding: 0 20px 2px 20px;
+    & .collapsed {
+        position: relative;
+        z-index: 99;
+    }
+
+    & .accordion-body {
+        padding:0px;
+        padding-bottom: 25px;
+        padding-right: 50px;
+        position: relative;
+        z-index: 1;
+        font-weight: 400;
+        font-size:16px;
+        line-height:30px;
+        @media #{$xl} {
+            font-size: 15px;
         }
-        & p{
-            color: #67687A;
+        @media #{$lg}{
+            font-size: 14px;
+        }
+        @media #{$md}{
+            font-size: 14px;
+        }
+        @media #{$xs}{
+            font-size: 13px;
+            padding-right: 0;
+            line-height: 26px;
+        }
+        @media #{$sm}{
+            font-size: 15px;
+        }
+    }
+}
+
+.tp-black-mode {
+    & .tp-custom-accordion {
+        & .accordion-buttons {
+            background-color:#242629;
+            color: var(--tp-common-white);
+            &:not(.collapsed) {
+                border: none;
+            }
+            &:hover {
+                background-color: var(--tp-theme-1);
+            }
+        }
+        & .accordion-body{
+            background-color:#242629 ;
         }
     }
 }

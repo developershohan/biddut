@@ -1,11 +1,5 @@
     @use "sass:selector";
 
-    @mixin tp-root($child) {
-        @at-root #{selector.unify(&, $child)} {
-            @content;
-        }
-    }
-
     @mixin root($child) {
         @at-root #{selector.unify(&, $child)} {
             @content;
@@ -66,15 +60,6 @@
             background-image:   radial-gradient($value);
           }
        
-    }
-
-    // gradient
-    @mixin textGradient(){
-        background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
     }
 
     // animate 
@@ -177,19 +162,6 @@
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-    }
-
-    @mixin rounded-btn($w : 40px, $h: 40px, $lh : 40px, $radius : 50%){
-        width:  $w;
-        height: $w;
-        line-height: $lh;
-        border-radius: $radius;
-    }
-
-    @mixin rounded($w : 40px, $h: 40px, $radius : 50%){
-        width:  $w;
-        height: $w;
-        border-radius: $radius;
     }
         
     

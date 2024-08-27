@@ -1,39 +1,42 @@
 @use '../../utils' as *;
 
 /*----------------------------------------*/
-/*  7.3 Brand css
+/*  7.3 brand css start
 /*----------------------------------------*/
-
-.#{$theme-prefix}-brand{
-    &-area{}
-    &-background{
-        &:before {
-            position: absolute;
-            content: "";
-            height: 34%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background: #f6f6f9;
-            z-index: -1;
-          }
-    }
-    &-wrapper{
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 5px;
-        padding: 80px 103px;
-        @media #{$lg} {
-            padding: 70px 40px;
+.tp-brand{
+    &-wrap {
+        padding: 66px 120px;
+        margin-top: -80px;
+        position: relative;
+        z-index: 1;
+        @media #{$xxxl,$xxl}{
+            padding: 66px 50px;
         }
-        @media #{$md,$sm,$xs} {
-            padding: 40px;
+        @media #{$xl,$lg,$md,$xs}{
+            padding: 66px 30px;
         }
     }
-    &-thumb{
-        @media #{$md,$sm,$xs} {
-            text-align: center;
-            margin-bottom: 30px;
+    &-item{
+        & img {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s linear;
+            &:hover {
+                filter: grayscale(0%);
+                opacity: 1;
+            }
+        }
+    }
+}
+.tp-brand-2{
+    &-item{
+        text-align: center;
+        & img {
+            opacity: 26%;
+            transition: all 0.3s linear;
+            &:hover {
+                opacity: 100%;
+            }
         }
     }
 }

@@ -1,345 +1,299 @@
 @use '../../utils' as *;
 
 /*----------------------------------------*/
-/*  8.4 Testimonial css
+/*  7.20 testimonial css start
 /*----------------------------------------*/
 
-.#{$theme-prefix}-testimonial{
-    &-bg{
-        position: absolute;
-        top: 20%;
-        right: 0;
-        z-index: 1;
-        &-color{
-            &::after{
-                position: absolute;
-                content: "";
-                top: 0;
-                right: 0;
-                z-index: 0;
-                width: 49%;
-                height: 100%;
-                background: var(--tp-gradient-primary);
-                clip-path: polygon(42% 1%, 100% -159%, 100% 100%, 0% 100%);
-                @media #{$md} {
-                    width: 42%;
-                }
-                @media #{$sm,$xs} {
-                    display: none;
-                }
-            }
-        }
-    }
-    &-item{
-        &-wrapper{
-            background: var(--tp-common-white);
-            box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
-            border-radius: 5px;
-            @media #{$xs} {
-                flex-wrap: wrap;
-                justify-content: center
-            }
-        }
-        &-thumb{
-            @include root('div'){
-                & img{
-                    border-radius: 5px;
-                    max-width: inherit;
-                }
-            }
-        }
-        &-rating{
-            margin-bottom: 15px;
-            & span{
-                font-weight: 900;
-                font-size: 16px;
-                & i{
-                    color: rgba($color: #67687A, $alpha: 0.3);
-                }
-                &.color{
-                    & i{
-                        color: #FFA800;
+.tp-testimonial{
+    &-active {
+        margin:-40px -20px;
+        padding:40px  20px;
+        & .swiper-slide {
+            &.swiper-slide-active {
+                & .tp-testimonial-item {
+                    &::after{
+                        background-image: -moz-linear-gradient( -90deg, rgb(226,9,53) 0%, rgb(22,23,26) 100%);
+                        background-image: -webkit-linear-gradient( -90deg, rgb(226,9,53) 0%, rgb(22,23,26) 100%);
+                        background-image: -ms-linear-gradient( -90deg, rgb(226,9,53) 0%, rgb(22,23,26) 100%);
+                        opacity: 100%;
                     }
                 }
             }
         }
-        &-content{
-            padding: 34px 40px 39px 30px;
-            @media #{$xl} {
-                padding: 30px 40px 30px 30px;
-            }
-            @media #{$lg} {
-                padding: 12px 30px 12px 30px;
-            }
-            & p{
-                margin-bottom: 20px;
-            }
-            & span{
-                font-family: var(--tp-ff-p);
-                font-weight: 400;
-                font-size: 12px;
-                color: var(--tp-text-1);
-            }
+    }
+    &-item {
+        padding:40px;
+        padding-left: 100px;
+        margin-left: 65px;
+        background-color: var(--tp-common-white);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        position: relative;
+        @media #{$xs}{            
+            padding: 40px 20px;
+            margin-left: 0;
         }
-        &-title{
-            font-size: 20px;
-            letter-spacing: -0.8px;
+        @media #{$sm}{            
+            padding: 40px;
+            margin-left: 0;
+        }
+        &::after{
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width:6px;
+            position: absolute;
+            background-image: -moz-linear-gradient( -90deg, rgb(226,9,53) 0%, rgb(22,23,26) 100%);
+            background-image: -webkit-linear-gradient( -90deg, rgb(226,9,53) 0%, rgb(22,23,26) 100%);
+            background-image: -ms-linear-gradient( -90deg, rgb(226,9,53) 0%, rgb(22,23,26) 100);
+            opacity: 0.2;
+        }
+    }
+    &-thumb {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left:-65px;
+        z-index: 1;
+        @media #{$xs}{
+            position: static;
+            transform: translateY(0%);
+            margin-bottom: 50px;
+        }
+        & img {
+            border-radius: 50%;
+            height: 130px;
+            width: 130px;
         }
         &-quot {
             position: absolute;
-            bottom: 40px;
-            right: 40px;
-          }
-      }
-
-    &-nav{
-        & button{
-            position: absolute;
-            top: 62%;
-            left: 10%;
-            height: 67px;
-            width: 67px;
-            border-radius: 50%;
-            font-size: 17px;
-            font-weight: 900;
-            color: var(--tp-common-white);
-            background: var(--tp-common-white);
-            z-index: 1;
-            @media #{$x4l} {
-                left: 5%;
-            }
-            @media #{$x3l} {
-                left: 2%;
-            }
-            @media #{$xxl,$xl} {
-                left: 1%;
-            }
-            @media #{$lg,$md,$sm,$xs} {
-                display: none;
-            }
-            &:hover{
-                & i{
-                    background: var(--tp-common-white);
-                    -webkit-text-fill-color: transparent;
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                }
-                &::before{
-                    opacity: 1;
-                }
-            }
-            &::before{
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            @media #{$xs}{
                 position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
+                left: 26%;
+                transform: translateX(-50%);
+                top: 95px;
+            }
+            @media #{$sm}{
+                position: absolute;
+                left: 16%;
+                transform: translateX(-50%);
+                top: 95px;
+            }
+            & span {
+                height: 60px;
+                width: 60px;
+                line-height: 70px;
+                font-size: 24px;
                 border-radius: 50%;
-                opacity: 0;
-                background-image: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
-                z-index: -1;
-                @include transition()
+                text-align: center;
+                display: inline-block;
+                color: var(--tp-common-white);
+                background-color: var(--tp-theme-1);
             }
-            & i{
-                background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
+        }
+    }
+    &-text {
+        & p {
+            line-height: 30px;
+            padding-right: 20px;
+            padding-bottom: 10px;            
+            @media #{$md}{
+                padding-right: 30px;
             }
-            &.testimonial-button-next-1{
-                left: auto;
-                right: 10%;
-                @media #{$x4l} {
-                    right: 5%;
-                }
-                @media #{$x3l} {
-                    right: 2%;
-                }
-                @media #{$xxl,$xl} {
-                    right: 1%;
-                }
-                @media #{$lg,$md,$sm,$xs} {
+            @media #{$xs}{
+                padding-right: 0px;
+                font-size: 15px;
+            }
+        }
+    }
+    &-author{
+        &-info {
+            & span {
+                font-weight: 500;
+            }
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    }
+    &-star {
+        & i {
+            color: var(--tp-theme-1);
+        }
+    }
+    &-shape {
+        &-1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &-2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            animation: tptranslateX2 4s infinite alternate;
+            @media #{$xxl}{
+                top: -10%;
+            }
+            @media #{$xl}{
+                top: -20%;
+            }
+        }
+        &-3 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        &-4 {
+            position: absolute;
+            left: -3%;
+            bottom: 0;
+            animation: tptranslateX2 3s infinite alternate;
+        }
+        &-5 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            animation: tptranslateY2 4s infinite alternate;
+        }
+    }
+}
+.tp-testimonial-3 {
+    &-space {
+        padding-top: 120px;
+        padding-bottom: 235px;
+    }
+    &-item {
+        padding: 40px;
+        padding-top: 80px;
+        background-color: var(--tp-common-white);
+        position: relative;
+        z-index: 3;
+        @media #{$xs}{
+            padding: 40px 20px;
+            padding-top: 80px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 35px;
+            height: 33px;
+            width: 55px;
+            background-color: var(--tp-common-white);
+            clip-path: polygon(100% 0, 0 0, 0 100%);
+        }
+        &-wrap {
+            margin-top: 50px;
+        }
+        &-box {
+            & .tp-testimonial-3-item {
+                background-color: transparent;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                &::after{
                     display: none;
                 }
             }
+            & .tp-testimonial-3-active {
+                margin: -30px -20px;
+                padding:30px 20px;
+            }
         }
     }
-
-
-
-    &-area-2{}
-    &-item-2{
-        position: relative;
-        background: var(--tp-common-white);
-        border-radius: 0px 5px 5px 0px;
-        box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
-        margin-left: 121px;
-        padding-left: 147px;
-        @media #{$lg,$xs} {
-            margin-left: 0;
-            padding-left: 0;
-        }
-    }
-    &-thumb-2{
+    &-avata{
         position: absolute;
-        top: 0;
-        left: -121px;
-        @media #{$lg,$xs} {
-            position: static;
-            text-align: center;
-        }
-        @include tp-root('div'){
-            & img{
-                border-radius: 42%;
-            }
-        }
-    }
-    &-content-2{
-        position: relative;
-        padding: 35px 3px;
-        @media #{$xl,$sm} {
-            padding: 22px 2px;
-        }
-        @media #{$lg,$xs} {
-            padding: 35px 22px;
-        }
-        @media #{$md} {
-            padding: 52px 8px;
-        }
-    }
-    &-quote{
-        position: absolute;
-        top: 30px;
-        right: 35px;
-        @media #{$sm,$xs} {
-            right: 10px;
-            top: 20px;
-        }
-    }
-    &-user{
-        &-content{
-            &-description{
-                margin-bottom: 15px;
-                font-size: 16px;
-                font-weight: 400;
-                font-family: var(--tp-ff-p);
-                color: var(--tp-text-body);
-                display: block;
-            }
-            & p{
-                color: var(--tp-text-1);
-            }
-        }
-    }
-    &-title-2{
-        font-weight: 600;
-        font-size: 24px;
-        letter-spacing: -0.96px;
-    }
-    &-nav-2{
-        position: relative;
-        & button{
-            position: absolute;
-            right: 75px;
-            height: 60px;
-            width: 60px;
+        top: -50px;
+        left: 0;
+        right: 0;
+        & img {
             border-radius: 50%;
-            font-size: 16px;
+            width: 101px;
+            height: 101px;
+        }
+    }
+    &-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    &-author-info {
+        position: relative;
+        z-index: 5;
+        & span {
             font-weight: 500;
-            color: var(--tp-common-white);
-            background: #D8E5EB;
-            z-index: 1;
-            &:hover{
-                & i{
-                    background: var(--tp-common-white);
-                    -webkit-text-fill-color: transparent;
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                }
-                &::before{
-                    opacity: 1;
-                }
+            font-size: 16px;
+            color: var(--tp-theme-1);
+        }
+    }
+    &-text {
+        & p {
+            line-height: 24px;
+            @media #{$md}{
+                padding: 0 100px;
             }
-            &::before{
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                border-radius: 50%;
-                opacity: 0;
-                background-image: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
-                z-index: -1;
-                @include transition()
-            }
-            & i{
-                background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
-            }
-            &.testimonial-button-next-1{
-                right: 0;
+            @media #{$xs}{
+                font-size: 14px;
             }
         }
     }
-
-
-
-
-    &-area-3{}
-    &-shape-3{
-        & .shape-1{
-            position: absolute;
-            top: -140px;
-            left: 0;
+    &-star {
+        & i {
+            color: var(--tp-theme-1);
         }
-        & .shape-2{
+    }
+    &-active {
+        margin: -30px;
+        padding: 30px;
+    }
+    &-shape{
+        &-1{
             position: absolute;
-            bottom: 30px;
+            top: 0;
             right: 0;
+            z-index: 4;
+        }
+        &-2 {
+            position: absolute;
+            bottom: 0;
+            left: -5%;
+            animation: tptranslateX2 4s infinite alternate;
+
+        }
+        &-3 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            animation: tptranslateX2 4s infinite alternate;
         }
     }
-    &-title{
-        &-wrapper-3{
-            & .tp-section-title{
-                color: var(--tp-common-white);
-            }
-        }
-    }
-    &-item-3{
-        background: var(--tp-common-white);
-        box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
-        border-radius: 45px;
-        padding: 40px;
-        & p{
-            margin-bottom: 35px;
-            color: var(--tp-text-1);
-        }
-    }
-    &-user{
-        &-3{
-            &-thumb{
-                & img{
-                    border-radius: 50%;
-                    margin-right: 20px;
+    &-section-box {
+        & .tp-section-title {
+            @media #{$lg}{
+                & br {
+                    display: block;
                 }
             }
-            &-content{
-                & span{
-                    font-family: var(--tp-ff-p);
-                    font-weight: 400;
-                    font-size: 16px;
-                    color: var(--tp-heading-primary);
-                }
-            }
-            &-title{
-                font-size: 24px;
-                font-weight: 600;
-                letter-spacing: -0.96px;
-            }
         }
+    }
+}
+.tp-black-mode{
+    & .tp-testimonial-3-bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    & .tp-testimonial-3-item {
+        background-color: #1f2023;
+        &::after{
+            background-color: #1f2023;
+        }
+    }
+    & .tp-testimonial-3-title {
+        color: var(--tp-common-white);
     }
 }

@@ -5,7 +5,7 @@
 /*----------------------------------------*/
 
 /* tp range slider css */
-.#{$theme-prefix}-range-slider{
+.#{$theme-prifix}-range-slider{
 
     & .inside-slider{
         padding-left: 7px;
@@ -55,7 +55,7 @@
 
 /* tp swiper slider dot */
 
-.#{$theme-prefix}-swiper-dot{
+.#{$theme-prifix}-swiper-dot{
     line-height: 1;
     .swiper-pagination-bullet{
         width: 10px;
@@ -74,7 +74,7 @@
         }
     }
 
-    &.#{$theme-prefix}-swiper-dot-style-darkRed{  
+    &.#{$theme-prifix}-swiper-dot-style-darkRed{  
         & .swiper-pagination-bullet{
             &.swiper-pagination-bullet-active{
                 background-color: var(--tp-theme-secondary);
@@ -83,7 +83,7 @@
     }
 }
 
-.#{$theme-prefix}-swiper-dot-border{
+.#{$theme-prifix}-swiper-dot-border{
     line-height: 1;
     .swiper-pagination-bullet{
         width: 12px;
@@ -108,7 +108,7 @@
         }
     }
 
-    &.#{$theme-prefix}-swiper-dot-style-darkRed{  
+    &.#{$theme-prifix}-swiper-dot-style-darkRed{  
         & .swiper-pagination-bullet{
             &.swiper-pagination-bullet-active{
                 background-color: var(--tp-theme-secondary);
@@ -117,7 +117,7 @@
     }
 }
 
-.#{$theme-prefix}-swiper-arrow{
+.#{$theme-prifix}-swiper-arrow{
     & button{
         width: 40px;
         height: 40px;
@@ -142,11 +142,11 @@
 
 /* tp swiper scrollbar */
 
-.#{$theme-prefix}-swiper-scrollbar{
+.#{$theme-prifix}-swiper-scrollbar{
     background-color: #EDEFF2;
     height: 2px;
     @extend %transition;
-    & .#{$theme-prefix}-swiper-scrollbar-drag{
+    & .#{$theme-prifix}-swiper-scrollbar-drag{
         background-color: var(--tp-common-black);
         height: 100%;
 
@@ -163,7 +163,7 @@
 
 /* tp slick arrow */
 
-.#{$theme-prefix}-slick-dot{
+.#{$theme-prifix}-slick-dot{
     & .slick-dots{
         & li{
             display: inline-block;
@@ -198,15 +198,3 @@
     }
 }
 
-
-.#{$theme-prefix}-horizontal-slider{
-    -webkit-animation: horizonalSlide 10s linear infinite;
-    animation: horizonalSlide 10s linear infinite;
-}
-
-@include keyframes(horizonalSlide){
-    100% {
-        -webkit-transform: translate3d(-50%, 0%, 0);
-        transform: translate3d(-50%, 0%, 0);
-    }
-}

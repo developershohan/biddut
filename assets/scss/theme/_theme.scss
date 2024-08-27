@@ -1,10 +1,10 @@
 @use '../utils' as *;
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Finbest - Banking and Finance HTML Template
+    Template Name: Biddut – Electricity Services HTML Template
     Author: Theme_Pure
-    Support: basictheme400@gmail.com
-    Description: Finbest - Banking and Finance HTML Template
+    Support: https://help.themepure.net/support/
+    Description:Biddut – Electricity Services HTML Template
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -39,6 +39,7 @@
 		2.16 Search
 		2.17 Hotspot
 		2.18 Ragne Slider
+
 	-----------------
     03. HEADER CSS
 	-----------------
@@ -51,42 +52,45 @@
 	04. MENU CSS
 	---------------------------------
 		4.1 Main menu css
-		4.2 Meanmenu css
-		4.3 Mobile css
 
 	---------------------------------
 	05. BLOG CSS
 	---------------------------------
-		5.1 Postbox css
-		5.2 Recent Post css
-		5.3 Sidebar css
-		5.4 blog css
+	    5.1 blog css start
+		5.2 Postbox css
+		5.3 Recent Post css
+		5.4 Sidebar css
 
 	---------------------------------
 	06. FOOTER CSS
 	---------------------------------
 		6.1 Footer Style 1
-		6.2 Footer Style 2
-		6.3 Footer Style 3
 
 	
 	---------------------------------
 	07. PAGES CSS
 	---------------------------------
-		7.1 About css
-		7.2 blog css
-		7.3 Brand css
-		7.4 contact css
-		7.5 counter css
-		7.6 cta css
-		7.7 faq css
-		7.8 Hero css
-		7.9 process css
-		8.0 project css
-		8.1 Services css
-		8.2 support css
-		8.3 team css
-		8.4 Testimonial css
+		7.1 about css start 
+		7.2 app css start
+		7.3 brand css start
+		7.4 cart css start
+		7.5 checkout css start
+		7.6 choose css start
+		7.7 contact css start 
+		7.8 cta css start
+		7.9 error css start
+		7.10 faq css start
+		7.11 feature css start
+		7.12 funfact css start
+		7.13 price css start 
+		7.14 project css start
+		7.15 service css start
+		7.16 shop css start 
+		7.17 slider css start
+		7.18 step css start
+		7.19 team css start
+		7.20 testimonial css start
+		7.21 video css start
 
 
 
@@ -97,6 +101,32 @@
 /*  1.1 Theme Default
 /*----------------------------------------*/
 
+@media (min-width: 1200px) {
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+		max-width: 1200px;
+	}	
+	
+}
+
+.custom-container-1{
+	max-width: 1700px;  
+} 
+.custom-container-2{
+	max-width: 1250px;  
+} 
+.custom-container-3{
+	max-width: 1530px;  
+} 
+.custom-container-4{
+	max-width: 1410px;  
+} 
+.custom-container-5{
+	max-width: 1630px;  
+} 
+
+
+
+@import url($font-url);
 
 *{
 	margin: 0;
@@ -109,7 +139,7 @@
 ---------------------------------*/
 body {
 	font-family: var(--tp-ff-body);
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: normal;
 	color: var(--tp-text-body);
 	line-height: 26px;
@@ -126,10 +156,10 @@ h4,
 h5,
 h6 {
 	font-family: var(--tp-ff-heading);
-	color: var(--tp-heading-primary);
+	color: var(--tp-common-black);
 	margin-top: 0px;
-	font-weight: 500;
-	line-height: 1.2;
+	font-weight: 700;
+	line-height: 1.1;
 	@include transition(color);
 }
 
@@ -164,19 +194,17 @@ ul {
 
 p {
 	font-family: var(--tp-ff-p);
-	font-size: 16px;
-	font-weight: 400;
 	color: var(--tp-text-body);
-	line-height: 28px;
-	margin-bottom: 0px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 15px;
 }
-li {
-	list-style: none;
-}
-img{
+img {
 	max-width: 100%;
-	height: auto;
 }
+
+
 a,
 button,
 p,
@@ -239,25 +267,26 @@ input[type="password"],
 input[type="url"],
 textarea{
 	outline: none;
-	background-color: #fff;
-	height: 56px;
+	background-color:#f5f5f8;
+	height: 60px;
 	width: 100%;
-	line-height: 56px;
-	font-size: 14px;
+	line-height: 60px;
+	font-size: 16px;
 	color: var(--tp-common-black);
-	padding-left: 26px;
-	padding-right: 26px;
-	border: 1px solid #E0E2E3;
+	padding-left: 25px;
+	padding-right: 25px;
+	resize: none;
+	border: 1px solid transparent;
 
 	@include placeholder{
-		color: #95999D;
+		color: #727272;
 	}
 	@include rtl{
 		text-align: right;
 	}
 
 	&:focus{
-		border-color: var(--tp-common-black);
+		border-color: var(--tp-theme-1);
 		&::placeholder{
 			opacity: 0;
 		}
@@ -300,7 +329,6 @@ input[type="color"] {
 	text-shadow: none;
 }
 
-
 *::-moz-placeholder {
 	color: var(--tp-common-black);
 	font-size: 14px;
@@ -311,3 +339,72 @@ input[type="color"] {
 	font-size: 14px;
 	opacity: 1;
 }
+
+
+.z-index{
+	position: relative;
+	z-index: 1;
+}
+.z-index-2{
+	position: relative;
+	z-index: 2;
+}
+.z-index-3{
+	position: relative;
+	z-index: 3;
+}
+.z-index-4{
+	position: relative;
+	z-index: 4;
+}
+.z-index-5{
+	position: relative;
+	z-index: 5;
+}
+.z-index-6{
+	position: relative;
+	z-index: 6;
+}
+.z-index-7{
+	position: relative;
+	z-index: 7;
+}
+.z-index-8{
+	position: relative;
+	z-index: 8;
+}
+.z-index-9{
+	position: relative;
+	z-index: 9;
+}
+
+
+
+.gx-10{
+	--bs-gutter-x: 10px;
+}
+.gx-15{
+	--bs-gutter-x: 15px;
+}
+.gx-20{
+	--bs-gutter-x: 20px;
+}
+.gx-25{
+	--bs-gutter-x: 25px;
+}
+.gx-30{
+	--bs-gutter-x: 30px;
+}
+.gx-35{
+	--bs-gutter-x: 35px;
+}
+.gx-40{
+	--bs-gutter-x: 40px;
+}
+.gx-45{
+	--bs-gutter-x: 45px;
+}
+.gx-50{
+	--bs-gutter-x: 50px;
+}
+
