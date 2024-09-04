@@ -53,7 +53,10 @@
 ?>
    <header>
       <div class="tp-header-transparent border-color">
+
+
          <!-- header top area start -->
+         <?php if ($header_topbar_switch) : ?>
          <div class="tp-header-top-area tp-header-top-wrap tp-header-top-space p-relative black-bg">
             <div class="container">
                <div class="row align-items-center">
@@ -62,7 +65,7 @@
                         <ul>
                            <li>
                               <i class="flaticon-pin"></i>
-                              <a href="#">76 San Fransisco Street. New York</a>
+                              <a href="#"><?php echo esc_html( $header_top_address_text ) ?></a>
                            </li>
                            <li class="d-none d-md-inline-block">
                               <i class="flaticon-mail-1"></i>
@@ -88,6 +91,7 @@
                </div>
             </div>
          </div>      
+         <?php endif; ?>
          <!-- header top area end -->
    
          <!-- header area start -->
