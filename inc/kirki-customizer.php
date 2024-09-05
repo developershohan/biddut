@@ -5,8 +5,8 @@ new \Kirki\Panel(
     'panel_id',
     [
         'priority'    => 10,
-        'title'       => esc_html__( 'Finbest Panel', 'biddut' ),
-        'description' => esc_html__( 'Finbest Panel Description.', 'biddut' ),
+        'title'       => esc_html__( 'Biddut Panel', 'biddut' ),
+        'description' => esc_html__( 'Biddut Panel Description.', 'biddut' ),
     ]
 );
 
@@ -382,7 +382,7 @@ function header_logo_section(){
             'label'       => esc_html__( 'Header Logo', 'biddut' ),
             'description' => esc_html__( 'Theme Default/Primary Logo Here', 'biddut' ),
             'section'     => 'header_logo_section',
-            'default'     => get_template_directory_uri() . '/assets/img/logo/logo-black.png',
+            'default'     => get_template_directory_uri() . '/assets/img/logo/white-logo.png',
         ]
     );
     new \Kirki\Field\Image(
@@ -1043,7 +1043,7 @@ function theme_color_section(){
         'theme_color_section',
         [
             'title'       => esc_html__( 'Theme Color', 'biddut' ),
-            'description' => esc_html__( 'Finbest theme color Settings.', 'biddut' ),
+            'description' => esc_html__( 'Biddut theme color Settings.', 'biddut' ),
             'panel'       => 'panel_id',
             'priority'    => 150,
         ]

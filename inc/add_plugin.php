@@ -31,7 +31,7 @@ function biddut_register_required_plugins() {
             'required' => true,
         ],
         [
-            'name'         => esc_html__( 'Finbest Core ', 'biddut' ),
+            'name'         => esc_html__( 'Biddut Core ', 'biddut' ),
             'slug'         => 'biddut-core',
             'source'       => $url . 'biddut-core.zip',
             'required'     => true,

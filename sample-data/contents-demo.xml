@@ -26,7 +26,7 @@
 >
 
 <channel>
-	<title>Finbest</title>
+	<title>Biddut</title>
 	<link>https://wphix.com/wp/biddut</link>
 	<description>Banking and Finance WordPress Theme</description>
 	<pubDate>Thu, 26 Oct 2023 11:05:36 +0000</pubDate>
@@ -193,7 +193,7 @@
 
 <image>
 	<url>https://wphix.com/wp/biddut/wp-content/uploads/2023/08/favicon-1.png</url>
-	<title>Finbest</title>
+	<title>Biddut</title>
 	<link>https://wphix.com/wp/biddut</link>
 	<width>32</width>
 	<height>32</height>
@@ -6180,7 +6180,7 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_page_settings]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:15:{s:13:"system_colors";a:4:{i:0;a:3:{s:3:"_id";s:7:"primary";s:5:"title";s:7:"Primary";s:5:"color";s:7:"#6EC1E4";}i:1;a:3:{s:3:"_id";s:9:"secondary";s:5:"title";s:9:"Secondary";s:5:"color";s:7:"#54595F";}i:2;a:3:{s:3:"_id";s:4:"text";s:5:"title";s:4:"Text";s:5:"color";s:7:"#7A7A7A";}i:3;a:3:{s:3:"_id";s:6:"accent";s:5:"title";s:6:"Accent";s:5:"color";s:7:"#61CE70";}}s:13:"custom_colors";a:0:{}s:17:"system_typography";a:4:{i:0;a:5:{s:3:"_id";s:7:"primary";s:5:"title";s:7:"Primary";s:21:"typography_typography";s:6:"custom";s:22:"typography_font_family";s:6:"Roboto";s:22:"typography_font_weight";s:3:"600";}i:1;a:5:{s:3:"_id";s:9:"secondary";s:5:"title";s:9:"Secondary";s:21:"typography_typography";s:6:"custom";s:22:"typography_font_family";s:11:"Roboto Slab";s:22:"typography_font_weight";s:3:"400";}i:2;a:5:{s:3:"_id";s:4:"text";s:5:"title";s:4:"Text";s:21:"typography_typography";s:6:"custom";s:22:"typography_font_family";s:6:"Roboto";s:22:"typography_font_weight";s:3:"400";}i:3;a:5:{s:3:"_id";s:6:"accent";s:5:"title";s:6:"Accent";s:21:"typography_typography";s:6:"custom";s:22:"typography_font_family";s:6:"Roboto";s:22:"typography_font_weight";s:3:"500";}}s:17:"custom_typography";a:0:{}s:21:"default_generic_fonts";s:10:"Sans-serif";s:9:"site_name";s:7:"Finbest";s:15:"container_width";a:3:{s:4:"unit";s:2:"px";s:4:"size";i:1312;s:5:"sizes";a:0:{}}s:21:"space_between_widgets";a:6:{s:4:"unit";s:2:"px";s:4:"size";i:30;s:5:"sizes";a:0:{}s:6:"column";s:2:"30";s:3:"row";s:2:"30";s:8:"isLinked";b:1;}s:19:"page_title_selector";s:14:"h1.entry-title";s:11:"viewport_md";i:768;s:11:"viewport_lg";i:993;s:16:"site_description";s:35:"Banking and Finance WordPress Theme";s:15:"viewport_tablet";i:992;s:18:"active_breakpoints";a:3:{i:0;s:15:"viewport_mobile";i:1;s:15:"viewport_tablet";i:2;s:15:"viewport_laptop";}s:15:"viewport_laptop";i:1200;}]]></wp:meta_value>
+		<wp:meta_value><![CDATA[a:15:{s:13:"system_colors";a:4:{i:0;a:3:{s:3:"_id";s:7:"primary";s:5:"title";s:7:"Primary";s:5:"color";s:7:"#6EC1E4";}i:1;a:3:{s:3:"_id";s:9:"secondary";s:5:"title";s:9:"Secondary";s:5:"color";s:7:"#54595F";}i:2;a:3:{s:3:"_id";s:4:"text";s:5:"title";s:4:"Text";s:5:"color";s:7:"#7A7A7A";}i:3;a:3:{s:3:"_id";s:6:"accent";s:5:"title";s:6:"Accent";s:5:"color";s:7:"#61CE70";}}s:13:"custom_colors";a:0:{}s:17:"system_typography";a:4:{i:0;a:5:{s:3:"_id";s:7:"primary";s:5:"title";s:7:"Primary";s:21:"typography_typography";s:6:"custom";s:22:"typography_font_family";s:6:"Roboto";s:22:"typography_font_weight";s:3:"600";}i:1;a:5:{s:3:"_id";s:9:"secondary";s:5:"title";s:9:"Secondary";s:21:"typography_typography";s:6:"custom";s:22:"typography_font_family";s:11:"Roboto Slab";s:22:"typography_font_weight";s:3:"400";}i:2;a:5:{s:3:"_id";s:4:"text";s:5:"title";s:4:"Text";s:21:"typography_typography";s:6:"custom";s:22:"typography_font_family";s:6:"Roboto";s:22:"typography_font_weight";s:3:"400";}i:3;a:5:{s:3:"_id";s:6:"accent";s:5:"title";s:6:"Accent";s:21:"typography_typography";s:6:"custom";s:22:"typography_font_family";s:6:"Roboto";s:22:"typography_font_weight";s:3:"500";}}s:17:"custom_typography";a:0:{}s:21:"default_generic_fonts";s:10:"Sans-serif";s:9:"site_name";s:7:"Biddut";s:15:"container_width";a:3:{s:4:"unit";s:2:"px";s:4:"size";i:1312;s:5:"sizes";a:0:{}}s:21:"space_between_widgets";a:6:{s:4:"unit";s:2:"px";s:4:"size";i:30;s:5:"sizes";a:0:{}s:6:"column";s:2:"30";s:3:"row";s:2:"30";s:8:"isLinked";b:1;}s:19:"page_title_selector";s:14:"h1.entry-title";s:11:"viewport_md";i:768;s:11:"viewport_lg";i:993;s:16:"site_description";s:35:"Banking and Finance WordPress Theme";s:15:"viewport_tablet";i:992;s:18:"active_breakpoints";a:3:{i:0;s:15:"viewport_mobile";i:1;s:15:"viewport_tablet";i:2;s:15:"viewport_laptop";}s:15:"viewport_laptop";i:1200;}]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
@@ -11941,7 +11941,7 @@ Subscribe today</h2>
 Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie the BBC burke gosh boot so I said wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a penny my good sir wind up hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit mush a blinding shot young delinquent bloke boot blatant.
 
 <img class="alignnone wp-image-57 size-full" src="https://wphix.com/wp/biddut/wp-content/uploads/2023/08/blog-3.jpg" alt="" width="850" height="430" />
-<h3>Finbest the only theme you will ever need</h3>
+<h3>Biddut the only theme you will ever need</h3>
 Are you taking the piss young delinquent wellies absolutely bladdered the Eaton my good sir, cup of tea spiffing bleeder David mufty you mug cor blimey guvnor, burke bog-standard brown bread wind up barney. Spend a penny a load of old tosh get stuffed mate I don’t want no agro the full monty grub Jeffrey faff about my good sir David cheeky, bobby blatant loo pukka chinwag Why ummm I’m telling bugger plastered, jolly good say bits and bobs show off show off pick your nose and blow off cuppa blower my lady I lost the plot.
 
 Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie the BBC burke gosh boot so I said wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a penny my good sir wind up hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit mush a blinding shot young delinquent bloke boot blatant.]]></content:encoded>
@@ -12011,7 +12011,7 @@ Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no bi
 Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie the BBC burke gosh boot so I said wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a penny my good sir wind up hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit mush a blinding shot young delinquent bloke boot blatant.
 
 <img class="alignnone wp-image-57 size-full" src="https://wphix.com/wp/biddut/wp-content/uploads/2023/08/blog-3.jpg" alt="" width="850" height="430" />
-<h3>Finbest the only theme you will ever need</h3>
+<h3>Biddut the only theme you will ever need</h3>
 Are you taking the piss young delinquent wellies absolutely bladdered the Eaton my good sir, cup of tea spiffing bleeder David mufty you mug cor blimey guvnor, burke bog-standard brown bread wind up barney. Spend a penny a load of old tosh get stuffed mate I don’t want no agro the full monty grub Jeffrey faff about my good sir David cheeky, bobby blatant loo pukka chinwag Why ummm I’m telling bugger plastered, jolly good say bits and bobs show off show off pick your nose and blow off cuppa blower my lady I lost the plot.
 
 Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie the BBC burke gosh boot so I said wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a penny my good sir wind up hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit mush a blinding shot young delinquent bloke boot blatant.]]></content:encoded>
@@ -12082,7 +12082,7 @@ Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no bi
 Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie the BBC burke gosh boot so I said wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a penny my good sir wind up hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit mush a blinding shot young delinquent bloke boot blatant.
 
 <img class="alignnone wp-image-57 size-full" src="https://wphix.com/wp/biddut/wp-content/uploads/2023/08/blog-2.jpg" alt="" width="850" height="430" />
-<h3>Finbest the only theme you will ever need</h3>
+<h3>Biddut the only theme you will ever need</h3>
 Are you taking the piss young delinquent wellies absolutely bladdered the Eaton my good sir, cup of tea spiffing bleeder David mufty you mug cor blimey guvnor, burke bog-standard brown bread wind up barney. Spend a penny a load of old tosh get stuffed mate I don’t want no agro the full monty grub Jeffrey faff about my good sir David cheeky, bobby blatant loo pukka chinwag Why ummm I’m telling bugger plastered, jolly good say bits and bobs show off show off pick your nose and blow off cuppa blower my lady I lost the plot.
 
 Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie the BBC burke gosh boot so I said wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a penny my good sir wind up hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit mush a blinding shot young delinquent bloke boot blatant.]]></content:encoded>
@@ -12153,7 +12153,7 @@ Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no bi
 Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie the BBC burke gosh boot so I said wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a penny my good sir wind up hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit mush a blinding shot young delinquent bloke boot blatant.
 
 <img class="alignnone wp-image-57 size-full" src="https://wphix.com/wp/biddut/wp-content/uploads/2023/08/blog-2.jpg" alt="" />
-<h3>Finbest the only theme you will ever need</h3>
+<h3>Biddut the only theme you will ever need</h3>
 Are you taking the piss young delinquent wellies absolutely bladdered the Eaton my good sir, cup of tea spiffing bleeder David mufty you mug cor blimey guvnor, burke bog-standard brown bread wind up barney. Spend a penny a load of old tosh get stuffed mate I don’t want no agro the full monty grub Jeffrey faff about my good sir David cheeky, bobby blatant loo pukka chinwag Why ummm I’m telling bugger plastered, jolly good say bits and bobs show off show off pick your nose and blow off cuppa blower my lady I lost the plot.
 
 Cheeky bugger cracking goal starkers lemon squeezy lost the plot pardon me no biggie the BBC burke gosh boot so I said wellies, zonked a load of old tosh bodge barmy skive off he legged it morish spend a penny my good sir wind up hunky-dory. Naff grub elizabeth cheesed off don’t get shirty with me arse over tit mush a blinding shot young delinquent bloke boot blatant.]]></content:encoded>

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Finbest\n"
+"Project-Id-Version: Biddut\n"
 "POT-Creation-Date: 2023-09-02 11:13+0600\n"
 "PO-Revision-Date: 2023-09-02 11:12+0600\n"
 "Last-Translator: \n"
@@ -137,7 +137,7 @@ msgid "Elementor Page Builder"
 msgstr ""
 
 #: inc/add_plugin.php:35
-msgid "Finbest Core "
+msgid "Biddut Core "
 msgstr ""
 
 #: inc/add_plugin.php:41
@@ -683,11 +683,11 @@ msgid "Footer Style 3 : %1$s"
 msgstr ""
 
 #: inc/kirki-customizer.php:8
-msgid "Finbest Panel"
+msgid "Biddut Panel"
 msgstr ""
 
 #: inc/kirki-customizer.php:9
-msgid "Finbest Panel Description."
+msgid "Biddut Panel Description."
 msgstr ""
 
 #: inc/kirki-customizer.php:19
@@ -1197,7 +1197,7 @@ msgid "Theme Color"
 msgstr ""
 
 #: inc/kirki-customizer.php:961
-msgid "Finbest theme color Settings."
+msgid "Biddut theme color Settings."
 msgstr ""
 
 #: inc/kirki-customizer.php:969
@@ -1596,7 +1596,7 @@ msgid "https://www.google.com/maps/@36.0758266,-79.4558848,17z"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Finbest"
+msgid "Biddut"
 msgstr ""
 
 #. Theme URI of the plugin/theme
@@ -1604,7 +1604,7 @@ msgid "https://wphix.com/wp/biddut/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Finbest - Banking and Finance WordPress Theme"
+msgid "Biddut - Banking and Finance WordPress Theme"
 msgstr ""
 
 #. Author of the plugin/theme

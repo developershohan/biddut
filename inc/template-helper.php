@@ -135,8 +135,8 @@ add_action( 'biddut_language', 'biddut_language_list' );
 function biddut_header_logo() { ?>
     <?php 
         $biddut_logo_on = function_exists('tpmeta_field')? tpmeta_field('biddut_en_secondary_logo') : '';
-        $biddut_logo = get_template_directory_uri() . '/assets/img/logo/logo-black.png';
-        $biddut_logo_white = get_template_directory_uri() . '/assets/img/logo/logo.png';
+        $biddut_logo = get_template_directory_uri() . '/assets/img/logo/black-logo.png';
+        $biddut_logo_white = get_template_directory_uri() . '/assets/img/logo/white-logo.png';
 
         $biddut_site_logo = get_theme_mod( 'header_logo', $biddut_logo );
         $biddut_secondary_logo = get_theme_mod( 'header_secondary_logo', $biddut_logo_white );
@@ -158,7 +158,7 @@ function biddut_header_logo() { ?>
 // header logo
 function biddut_header_black_logo() { ?>
     <?php 
-        $biddut_logo = get_template_directory_uri() . '/assets/img/logo/logo-black.png';
+        $biddut_logo = get_template_directory_uri() . '/assets/img/logo/black-logo.png';
 
         $biddut_black_logo = get_theme_mod( 'header_logo', $biddut_logo );
     ?>
@@ -181,7 +181,7 @@ function biddut_header_social_profiles() {
     $biddut_topbar_youtube_url = get_theme_mod( 'header_youtube_link', __( '#', 'biddut' ) );
     ?>
 <?php if ( !empty( $biddut_topbar_fb_url ) ): ?>
-<a class="icon facebook" href="<?php print esc_url( $biddut_topbar_fb_url );?>"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="<?php print esc_url( $biddut_topbar_fb_url );?>"><i class="fa-brands fa-facebook-f"></i></a>
 <?php endif;?>
 
 <?php if ( !empty( $biddut_topbar_twitter_url ) ): ?>
@@ -295,7 +295,7 @@ function biddut_header_menu() {
             'menu_class'     => '',
             'container'      => '',
             'fallback_cb'    => 'biddut_Navwalker_Class::fallback',
-            'walker'         => new \TPCore\Widgets\biddut_Navwalker_Class,
+            'walker'         => new biddut_Navwalker_Class,
         ] );
     ?>
 <?php
@@ -309,10 +309,10 @@ function biddut_header_menu() {
 function biddut_onepage_menu_01() {
     wp_nav_menu( [
         'theme_location' => 'onepage-menu-menu-01',
-        'menu_class'     => 'tp-onepage-menu',
+        'menu_class'     => '',
         'container'      => '',
         'fallback_cb'    => 'biddut_Navwalker_Class::fallback',
-        'walker'         =>  new \TPCore\Widgets\biddut_Navwalker_Class,
+        'walker'         =>  new biddut_Navwalker_Class,
     ] );
 }
 
