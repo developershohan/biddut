@@ -47,7 +47,6 @@ function themepure_metabox( $meta_boxes ) {
 					"{$prefix}_check_bredcrumb_img", "==", "on"
 				)
 			),
-
             array(
 				
 				'label'    => esc_html__( 'Footer BG', 'biddut' ),

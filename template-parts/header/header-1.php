@@ -51,10 +51,70 @@ $header_auth_switch = get_theme_mod('header_auth_switch', true);
 $header_auth_link = get_theme_mod('header_auth_link', "#");
 
 ?>
+<!-- tp-offcanvus-area-start -->
+<div class="tpoffcanvas-area">
+   <div class="tpoffcanvas">
+      <div class="tpoffcanvas__close-btn">
+         <button class="close-btn"><i class="fal fa-times"></i></button>
+      </div>
+      <div class="tpoffcanvas__logo">
+         <a href="index.html">
+            <img src="assets/img/logo/white-logo.png" alt="">
+         </a>
+      </div>
+      <div class="tpoffcanvas__title">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima incidunt eaque ab cumque, porro maxime autem
+            sed.</p>
+      </div>
+      <div class="tp-main-menu-mobile d-xl-none"></div>
+      <div class="tpoffcanvas__contact-info">
+         <div class="tpoffcanvas__contact-title">
+            <h5>Contact us</h5>
+         </div>
+         <ul>
+            <li>
+               <i class="fa-light fa-location-dot"></i>
+               <a href="https://www.google.com/maps/@23.8223586,90.3661283,15z" target="_blank">Melbone st, Australia,
+                  Ny 12099</a>
+            </li>
+            <li>
+               <i class="fas fa-envelope"></i>
+               <a href="mailto:solaredge@gmail.com">themepure@gmail.com</a>
+            </li>
+            <li>
+               <i class="fal fa-phone-alt"></i>
+               <a href="tel:+48555223224">+48 555 223 224</a>
+            </li>
+         </ul>
+      </div>
+      <div class="tpoffcanvas__input">
+         <div class="tpoffcanvas__input-title">
+            <h4>Get UPdate</h4>
+         </div>
+         <form action="#">
+            <div class="p-relative">
+               <input type="text" placeholder="Enter mail">
+               <button>
+                  <i class="fas fa-paper-plane"></i>
+               </button>
+            </div>
+         </form>
+      </div>
+      <div class="tpoffcanvas__social">
+         <div class="social-icon">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="body-overlay"></div>
+<!-- tp-offcanvus-area-end -->
+
 <header>
    <div class="tp-header-transparent border-color">
-
-
       <!-- header top area start -->
       <?php if ($header_topbar_switch): ?>
          <div class="tp-header-top-area tp-header-top-wrap tp-header-top-space p-relative black-bg">
@@ -99,13 +159,13 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
             <div class="row align-items-center">
                <div class="col-xl-2 col-lg-4 col-md-4 col-6">
                   <div class="tp-header-logo">
-                  <?php biddut_header_logo(); ?>
+                     <?php biddut_header_logo(); ?>
                   </div>
                </div>
                <div class="col-xl-8 d-none d-xl-block">
                   <div class="tp-header-main-menu tp-header-menu-border-2 text-end text-xxl-start">
                      <nav class="tp-main-menu-content">
-                     <?php biddut_header_menu(); ?>
+                        <?php biddut_header_menu(); ?>
                      </nav>
                   </div>
                </div>
@@ -135,80 +195,6 @@ $header_auth_link = get_theme_mod('header_auth_link', "#");
       <!-- header area end -->
    </div>
 </header>
-<!-- breadcrumb area start -->
-<div class="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix"
-   data-background="assets/img/breadcurmb/breadcurmb.jpg">
-   <div class="container">
-      <div class="row">
-         <div class="col-xxl-12">
-            <div class="breadcrumb__content z-index d-flex justify-content-between align-items-end">
-               <div class="breadcrumb__section-title-box">
-                  <h4 class="breadcrumb__subtitle">BIDDUT ELCETRIC SERVICE</h4>
-                  <h3 class="breadcrumb__title">Our blog</h3>
-               </div>
-               <div class="breadcrumb__list">
-                  <span><a href="index.html">Home</a></span>
-                  <span class="dvdr"><i>/</i></span>
-                  <span>Our blog</span>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-<!-- breadcrumb area end -->
-<!-- header area start -->
-<header id="header-sticky" class="tp-header-area-2 p-relative tp-header-height d-none">
-   <div class="tp-header-space-2">
-      <div class="container-fluid">
-         <div class="row align-items-center">
-            <div class="col-xl-3 col-6">
-               <div class="tp-header-logo-2 p-relative">
-                  <?php biddut_header_logo(); ?>
-               </div>
-            </div>
-            <div class="col-lg-6 d-none d-xl-block">
-               <div class="tp-main-menu home-2 d-none d-xl-block">
-                  <nav class="tp-main-menu-content">
-                     <?php biddut_header_menu(); ?>
-                  </nav>
-               </div>
-            </div>
-            <?php if (!empty($biddut_header_right)): ?>
-               <div class="col-xl-3 col-6">
-                  <div class="tp-header-main-right-2 d-flex align-items-center justify-content-xl-end">
-                     <div class="tp-header-contact-2 d-flex align-items-center">
-                        <?php if (!empty($header_search_switch)): ?>
-                           <div class="tp-header-contact-search search-open-btn d-none d-xxl-block">
-                              <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                           </div>
-                        <?php endif; ?>
-                        <?php if (!empty($header_top_phone)): ?>
-                           <div class="tp-header-contact-inner d-none d-xl-flex align-items-center">
-                              <div class="tp-header-contact-icon">
-                                 <span><i class="fa-solid fa-phone"></i></span>
-                              </div>
-                              <div class="tp-header-contact-content">
-                                 <p><?php echo esc_html__("Requesting A Call:", "biddut") ?></p>
-                                 <span><a
-                                       href="tel:<?php echo biddut_kses($phone_number_url); ?>"><?php echo esc_html($header_top_phone); ?></a></span>
-                              </div>
-                           </div>
-                        <?php endif; ?>
-                     </div>
-                     <div class="tp-header-main-right-hamburger-btn d-xl-none offcanvas-open-btn text-end">
-                        <button class="hamburger-btn">
-                           <span></span>
-                           <span></span>
-                           <span></span>
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            <?php endif; ?>
-         </div>
-      </div>
-   </div>
-</header>
+
 <!-- header area end -->
 <?php get_template_part('template-parts/header/header-side-info'); ?>

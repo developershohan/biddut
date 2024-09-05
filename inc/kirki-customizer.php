@@ -431,6 +431,14 @@ function header_breadcrumb_section(){
         ]
     );
 
+    new \Kirki\Field\Text(
+        [
+            'settings' => 'breadcrumb_subtitle',
+            'label'    => esc_html__( 'Breadcrumb Subtitle', 'biddut' ),
+            'section'  => 'header_breadcrumb_section',
+        ]
+    );
+
 
     new \Kirki\Field\Color(
         [

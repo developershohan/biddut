@@ -76,32 +76,41 @@ function biddut_breadcrumb_func()
             $bg_main_img = !empty($bg_img_from_page) ? $bg_img_from_page['url'] : $bg_img;
         }
 
-        ?>
 
-        <!-- about breadcrumb area start -->
-        <section class="breadcrumb__area pt-165 pb-150 p-relative z-index-1 fix"
-            data-bg-color="<?php echo esc_attr($breadcrumb_bg_color); ?>">
-            <div class="breadcrumb__bg" data-background="<?php print esc_attr($bg_main_img); ?>"></div>
+        $tpmeta_breadcrumb_subtitle = function_exists('tpmeta_field') ? tpmeta_field('biddut_breadcrumb_subtitle') : 'test';
+        // var_dump($tpmeta_breadcrumb_subtitle);
+        $breadcrumb_subtitle = get_theme_mod('breadcrumb_subtitle');
+        // $breadcrumb_subtitle_main = !empty($tpmeta_breadcrumb_subtitle) ? $tpmeta_breadcrumb_subtitle : $breadcrumb_subtitle;
+
+
+
+
+
+        ?>
+        <!-- breadcrumb area start -->
+        <div class="breadcrumb__area breadcrumb__overlay breadcrumb__height p-relative fix"
+            data-background="<?php echo esc_url($bg_main_img) ?>">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="breadcrumb__content">
-                            <h3 class="breadcrumb__title"><?php echo biddut_kses($title); ?></h3>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="breadcrumb__content">
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="breadcrumb__content z-index d-flex justify-content-between align-items-end">
+                            <div class="breadcrumb__section-title-box">
+                                <h4 class="breadcrumb__subtitle"><?php echo esc_html($tpmeta_breadcrumb_subtitle) ?></h4>
+                                <h3 class="breadcrumb__title"><?php echo esc_html($title) ?></h3>
+                            </div>
                             <?php if (function_exists('bcn_display')): ?>
-                                <div class="breadcrumb__list text-center text-sm-end">
+                                <div class="breadcrumb__list">
+
                                     <?php bcn_display(); ?>
                                 </div>
                             <?php endif; ?>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- about breadcrumb area end -->
+        </div>
+        </div>
 
         <?php
     }
@@ -163,50 +172,7 @@ function biddut_search_form()
             </div>
         </div>
     </div>
-    <!-- search popup end -->
 
-
-    <!-- search area start -->
-    <div class="search-area d-none">
-        <div class="search-inner p-relative">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="search-wrapper">
-                            <div class="search-close">
-                                <button class="search-close-btn">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="search-content pt-35">
-                                <h3 class="heading text-center mb-30">
-                                    <?php echo esc_html__("Hi! How can we help You?", "biddut") ?>
-                                </h3>
-                                <div class="d-flex justify-content-center px-5">
-                                    <div class="search w-100 p-relative">
-                                        <form method="get" action="<?php print esc_url(home_url('/')); ?>">
-                                            <input type="text" name="s" class="search-input"
-                                                value="<?php print esc_attr(get_search_query()) ?>"
-                                                placeholder="<?php print esc_attr__('Search...', 'biddut'); ?>">
-                                            <button class="search-icon">
-                                                <i class="fa fa-search"></i>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="search-overlay"></div>
     <!-- search area end -->
 
