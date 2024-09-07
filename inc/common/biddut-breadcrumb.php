@@ -56,7 +56,7 @@ function biddut_breadcrumb_func()
     }
 
     $is_breadcrumb = function_exists('tpmeta_field') ? tpmeta_field('biddut_check_bredcrumb') : 'on';
-
+    
     $con1 = $is_breadcrumb && ($is_breadcrumb == 'on') && $breadcrumb_show == 1;
 
     $con_main = is_404() ? is_404() : $con1;
@@ -65,6 +65,7 @@ function biddut_breadcrumb_func()
         $bg_img_from_page = function_exists('tpmeta_image_field') ? tpmeta_image_field('biddut_breadcrumb_bg') : '';
 
         $hide_bg_img = function_exists('tpmeta_field') ? tpmeta_field('biddut_check_bredcrumb_img') : 'on';
+
         // get_theme_mod
         $bg_img = get_theme_mod('breadcrumb_image');
         $breadcrumb_padding = get_theme_mod('breadcrumb_padding');
@@ -77,10 +78,9 @@ function biddut_breadcrumb_func()
         }
 
 
-        $tpmeta_breadcrumb_subtitle = function_exists('tpmeta_field') ? tpmeta_field('biddut_breadcrumb_subtitle') : 'test';
-        // var_dump($tpmeta_breadcrumb_subtitle);
+        $tpmeta_breadcrumb_subtitle = function_exists('tpmeta_field') ? tpmeta_field('biddut_breadcrumb_subtitle') : '';
+        
         $breadcrumb_subtitle = get_theme_mod('breadcrumb_subtitle');
-        // $breadcrumb_subtitle_main = !empty($tpmeta_breadcrumb_subtitle) ? $tpmeta_breadcrumb_subtitle : $breadcrumb_subtitle;
 
 
 
@@ -95,7 +95,7 @@ function biddut_breadcrumb_func()
                     <div class="col-xxl-12">
                         <div class="breadcrumb__content z-index d-flex justify-content-between align-items-end">
                             <div class="breadcrumb__section-title-box">
-                                <h4 class="breadcrumb__subtitle"><?php echo esc_html($tpmeta_breadcrumb_subtitle) ?></h4>
+                                <h4 class="breadcrumb__subtitle"><?php echo esc_html($breadcrumb_subtitle) ?></h4>
                                 <h3 class="breadcrumb__title"><?php echo esc_html($title) ?></h3>
                             </div>
                             <?php if (function_exists('bcn_display')): ?>

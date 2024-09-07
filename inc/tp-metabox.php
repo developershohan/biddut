@@ -36,7 +36,13 @@ function themepure_metabox( $meta_boxes ) {
 				'default' => 'off',
 				'conditional' => array()
 			), 
-
+			array(
+				'label' => esc_html__( 'Show biddut_breadcrumb_subtitle?', 'biddut' ), 
+				'id'    => "biddut_breadcrumb_subtitle",
+				'type'  => 'text',
+				'placeholder' => '',
+				'default' => '', 
+			),
             array(
 				
 				'label'    => esc_html__( 'Breadcrumb Background', 'biddut' ),
